@@ -10,21 +10,30 @@
                 margin: 0;
             }
 
+            .line {
+                white-space: nowrap;
+                overflow-x: auto;
+            }
+
             ul {
                 list-style: none;
                 padding: 0;
                 margin: 15px;
+                
             }
 
             .line li {
                 font-size: 1em;
                 margin: 0 6px;
-                float: left;
+                display: inline;
+                white-space: nowrap;
             }
 
             .line li a {
                 text-decoration: none;
                 color: black;
+                display: inline-block;
+                white-space:normal;
             }
 
             .line li a:after {
@@ -42,7 +51,7 @@
         </style>
     </head>
     <body>
-        <div class="lg:text-2xl py-12 main line">
+        <div class="line">
             <ul>
                 <li>
                     <a
