@@ -10,30 +10,56 @@
                 margin: 0;
             }
 
-            a {
-                text-decoration: none;
-                padding: 0.5em;
-                background: linear-gradient(to right, #37aed0 50%, #fff 50%);
-                background-size: 200.5% 100%;
-                background-position: right bottom;
-                font-size: 0.9em;
-                color: #020202;
-                border: none;
-                display: inline-block;
-                border-color: none;
-                transition: all 0.2s ease-out;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 15px;
             }
 
-            a:hover {
-                background-position: left bottom;
-                color: white;
+            .line li {
+                font-size: 1em;
+                margin: 0 6px;
+                float: left;
+            }
+
+            .line li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .line li a:after {
+                content: "";
+                width: 0;
+                transition: all 0.3s ease;
+                border-bottom: 1px solid;
+                display: block;
+            }
+
+            .line li a:hover:after {
+                width: 100%;
+                border-bottom: 1px solid;
             }
         </style>
     </head>
     <body>
-        <div class="nav">
-            <a href="">楽曲レーベル</a>
-            <a href="">オープンソース</a>
+        <div class="lg:text-2xl py-12 main line">
+            <ul>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                        >ページ1</a
+                    >
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                        >ページ2</a
+                    >
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                        >ページ3</a
+                    >
+                </li>
+            </ul>
         </div>
     </body>
 </html>
